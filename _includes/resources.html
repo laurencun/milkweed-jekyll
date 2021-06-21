@@ -4,11 +4,11 @@
   <div class="resources-header">
     <h2>Resources</h2>
     </div>
-  
+
+  <div class="resources-content-wrapper">
     {% for item in site.data.resources %}
-    <div class="resources-content-wrapper">
     <div class="resources-content">
-      <img class="resource-icon" src="{{ item.icon }}" alt="">
+    <img class="resource-icon" src="{{ item.icon }}" alt=""/>
       <h4>{{ item.name }}</h4>
       <p>{{ item.info }}</p>
       <div class="resources-arrow-div">
@@ -17,7 +17,9 @@
           <img class="arrow-hover" src="assets/images/arrow-button-hover.svg" alt="arrow">
         </a>
       </div>
-  </div>
-  {% endfor %}
+    </div>
+      {% endfor %}
+    </div>
+
 
 </section>
